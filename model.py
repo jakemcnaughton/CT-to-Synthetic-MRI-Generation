@@ -49,7 +49,13 @@ def build_model(input_layer, start_neurons):
     
     output_layer = Conv2D(1, (1,1), padding="same", activation="sigmoid")(uconv1)
     
-    return output_layer
+    model = Model(input = inputs, output = conv10)
 
-input_layer = Input((img_size_target, img_size_target, 1))
-output_layer = build_model(input_layer, 16)
+    model.compile(optimizer = Adam(lr = 1e-4), loss = 'binary_crossentropy', metrics = ['accuracy'])
+    
+    #model.summary()
+
+    return model
+
+#input_layer = Input((img_size_target, img_size_target, 1))
+#output_layer = build_model(input_layer, 16)
