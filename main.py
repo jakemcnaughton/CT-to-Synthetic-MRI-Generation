@@ -16,7 +16,7 @@ for dirName, subdirList, fileList in os.walk(testpath):
     testlist.append(nib.load(os.path.join(testpath,filename)).get_fdata())
   
 
-model = unet()
+model = build_model()
 #Save every epoch
 model_checkpoint = ModelCheckpoint('unet_membrane.hdf5', monitor='loss',verbose=1, save_best_only=True)
 
