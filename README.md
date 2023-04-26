@@ -14,6 +14,23 @@ My pipeline was to
 
 ## To Train:
 Set Test = False
+
 Select GPUs (export CUDA_VISIBLE_DEVICES= x, y, z, ...)
+
 Set ... to the name of your model
+
 Run "python main3D.py"
+
+
+## To Test:
+Set Test = True
+
+Run "python main3D.py"
+
+
+## Evaluation:
+I have developed multiple files to evaluate and view your results.
+
+"eval.py" calculate SSIM, MAE, MSE, and PSNR over the non-zero pixels of the results.
+
+"toimage.py" lets you save Image slices of your nifti files.
