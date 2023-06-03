@@ -9,7 +9,7 @@ Import ONLY the model you want to use.
 
 
 ## Pre-process your data:
-My pipeline was to 
+My pipeline was to align the CTs and MRIs of each patient together and then align everything to the MNI152 atlas before performing brain extraction.
 
 
 ## To Train:
@@ -17,7 +17,7 @@ Set Test = False
 
 Select GPUs (export CUDA_VISIBLE_DEVICES= x, y, z, ...)
 
-Set ... to the name of your model
+Set NAME to the name of your model
 
 Run "python main3D.py"
 
