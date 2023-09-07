@@ -1,0 +1,18 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CT to Synthetic MRI Generation
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jake
+    family-names: McNaughton
+    email: jmcn735@aucklanduni.ac.nz
+    affiliation: University of Auckland
+    orcid: 'https://orcid.org/0000-0002-7423-8113'
+repository-code: >-
+  https://github.com/jakemcnaughton/CT-to-Synthetic-MRI-Generation/
+date-released: '2023-06-03'
