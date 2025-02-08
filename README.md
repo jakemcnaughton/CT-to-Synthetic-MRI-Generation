@@ -10,7 +10,7 @@ Import ONLY the model you want to use.
 
 ## Preprocessing
 We aligned the CT and MRI of each patient together and then aligned everything to the MNI152 atlas before performing brain extraction.
-
+![alt text](https://github.com/jakemcnaughton/CT-to-Synthetic-MRI-Generation/blob/main/Pipeline.png)
 
 ## Training
 Set Test = False
@@ -29,8 +29,6 @@ Run "python main3D.py"
 
 
 ## Evaluation
-I have developed multiple files to evaluate and view your results.
-
 "eval.py" calculate SSIM, MAE, MSE, and PSNR over the non-zero pixels of the results.
 
 "toimage.py" lets you save Image slices of your nifti files.
